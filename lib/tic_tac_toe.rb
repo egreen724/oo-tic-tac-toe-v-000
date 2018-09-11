@@ -27,7 +27,7 @@ class TicTacToe
   end
 
 def input_to_index(input)
- @index = "#{input}".to_i - 1
+ index = "#{input}".to_i - 1
 end
 
 #@index? 
@@ -61,7 +61,7 @@ def turn
   @character = current_player
 
   if valid_move?(index) == true 
-  player_move(index, character)
+  move(index, character)
   display_board
   else 
  turn
