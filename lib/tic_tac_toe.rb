@@ -61,7 +61,7 @@ def turn
   @character = current_player
 
   if valid_move?(@index) == true 
-  move(@index, character)
+  move(@index, @character)
   display_board
   else 
  turn
