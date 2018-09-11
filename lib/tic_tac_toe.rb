@@ -60,7 +60,7 @@ def turn
   @index = input_to_index(input)
   @character = current_player
 
-  if valid_move?(index) == true 
+  if valid_move?(@index) == true 
   move(index, character)
   display_board
   else 
